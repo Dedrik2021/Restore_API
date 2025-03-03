@@ -17,7 +17,7 @@ builder.Services.AddTransient<ExceptionMiddleware>();
 var app = builder.Build();
 
 app.UseMiddleware<ExceptionMiddleware>();
-app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:3000", "https://localhost:3001"));
+app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins("https://localhost:3000", "https://localhost:3001"));
 
 app.MapControllers();
 DbInitializer.InitDb(app);
