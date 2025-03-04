@@ -16,7 +16,7 @@ public class Basket
 
         var existingItem = FindItem(product.Id);
 
-        if (existingItem is null)
+        if (existingItem == null)
         {
             Items.Add(new BasketItem
             {
