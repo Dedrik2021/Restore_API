@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20250226232015_BasketEntityAdded")]
+    [Migration("20250308114456_BasketEntityAdded")]
     partial class BasketEntityAdded
     {
         /// <inheritdoc />
