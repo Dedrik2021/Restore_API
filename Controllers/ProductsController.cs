@@ -2,7 +2,7 @@ using System;
 using API.Data;
 using API.Entities;
 using API.Extensions;
-using API.RequestHelper;
+using API.RequestHelpers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
